@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-import cleaning
+# import cleaning
 
 app = Flask(__name__)
 
@@ -9,6 +9,9 @@ def index():
 
 def testing_function():
     print("Estamos testeando 1,2,3")
+
+def testing_2(name):
+    print(f"Testeamos saludando a {name}")
 
 if __name__ == "__main__":
     app.run()
